@@ -1,1 +1,135 @@
-hello
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            text-decoration: none;
+            color:black;
+            margin-left: 20px;
+        }
+        #row_2,#row_3,#row_4{
+            width:80%;
+            margin:auto;
+            margin-top: 50px;
+        }
+        #row_2 img{
+            width:100%;
+        }
+        #row_4>div{
+            margin: auto;
+            width:50%;
+            height:600px;
+        }
+        #row_4{
+            display:flex;
+        }
+        h4{
+            text-align: center;
+        }
+        #sign_in>p{
+            margin-left: 90px;
+        }
+        #sign_up>p{
+            text-align: center;
+        }
+        #sign_in>div{
+            margin-top: 56px;
+        }
+        #sign_up>div>div:nth-child(2){
+            margin-left: 20px;
+        }
+        #email,#password,#fname,#lname,#cemail,#birthdate,#phone,#pincode,#password,#cpassword{
+            width:100%;
+        }
+        #mail_container{
+            width:65%;
+            margin:auto;
+        }
+        #mail_container input{
+            text-align:center;
+            height: 30px;
+            margin-top: 10px;
+        }
+        #privacy{
+            margin-top:30px;
+            display:block;
+            text-align: center;
+        }
+        #create{
+            margin-top: 10px;
+            color:white;
+            background-color: black;
+            height:40px;
+            width:250px;
+            border-radius: 2px 2px 2px 2px;
+        }
+        #cdiv,p{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html">HOME</a>
+    <div id="row_2">
+        <img src="https://www.bathandbodyworks.in/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dw8e881865/images/hellothere.png" >
+    </div>
+    <div id="row_3">
+        <h2>Create an Account</h2>
+        <hr size="1" width="100%" color="black"> 
+    </div>
+    <div id="row_4">
+        <div id="sign_up">
+            <form>
+                <div id="mail_container">
+                      <label>* First Name</label>
+                      <div>
+                      <input type="text" id="fname">
+                      </div>
+                      <label>* Last Name</label>
+                      <div>
+                      <input type="text" id="lname">
+                      </div>
+                      <label>* Email</label>
+                      <div>
+                      <input type="email" placeholder="Enter your email" id="email">
+                      </div>
+                      <label>* Confirm Email</label>
+                      <div>
+                      <input type="email" id="cemail">
+                      </div>
+                      <label>* Birthday</label>
+                      <div>
+                      <input type="date" id="birthdate">
+                      </div>
+                      <label>* Zip Postal Code</label>
+                      <div>
+                      <input type="number" id="pincode">
+                      </div>
+                      <label>* Phone</label>
+                      <div>
+                      <input type="number" id="phone">
+                      </div>
+                      <p>We'll use this to look up your Rewards account in stores.</p>
+                      <label>* Password</label>
+                      <div>
+                      <input type="password" placeholder="Enter your password" id="password">
+                      </div>
+                      <label>* Confirm Password</label>
+                      <div>
+                      <input type="password" placeholder="Enter your password" id="cpassword">
+                      </div>
+                      <a href="h" id="privacy">Privacy Policy</a>
+                      <div id="cdiv"><button id="create">CREATE ACCOUNT</button></div>
+                      <p>QUESTIONS?</p>
+                      <p>We’re here for you! Call us at 1800-833-5350.</p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="signup.js"></script>
+</html>
