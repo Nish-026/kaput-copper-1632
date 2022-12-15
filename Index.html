@@ -7,15 +7,14 @@
     <title>Document</title>
     <style>
         header{
-            border:1px solid rgb(17, 17, 17);
-            height:200px;
+            height:230px;
             position: sticky;
             top: 0;
             z-index: 999;
-            background-color: aliceblue;
+            background-color: white;
         }
         header>div{
-            border:1px rgb(247, 141, 141) solid;
+            border:1px white solid;
         }
         #logo-container{
             display:flex;
@@ -23,26 +22,59 @@
         }
         #logo{
             width:20%;
-            border: 1px solid purple;
+            margin-left: 40%;
         }
         #logo img{
             width:100%;
+            height: 100%;
         }
         #cart-container{
-            width:40%;
-            border: 1px solid purple;
+            width:30%;
             display: flex;
-        }
-        #cart-container>div{
-            border: 1px solid red;
+            margin-left: 50px;
         }
         #menu-container{
-            display:flex;
-            justify-content: space-evenly;
+            text-align: center;
             
+        }
+        #menu-container ul{
+            display:inline-flex;
+            list-style: none;
+            margin: auto;
+        }
+        #menu-container ul li{
+            width: 120px;
+            font-size: small;
+            margin:15px;
+        }
+        #menu-container ul li a{
+            text-decoration: none;
+            color:black;
+        }
+        #menu-container ul li:hover{
+         text-decoration: underline;
+         text-decoration-color: rgb(249, 211, 197);
+         text-decoration-thickness: 1px;
         }
         #row_2{
             height: 40px;
+            background-color: #f2f2f2;
+        }
+        form input,button{
+            margin-top: 10px;
+            border: none;
+        }
+        form{
+            border: 1px solid black;
+            height: 90%;
+            border-radius: 2px 2px 2px 2px;
+        }
+        form button>img{
+            width:10px;
+            height: 10px;
+        }
+        form input{
+            width:280px;
         }
         #row_1>div{
             text-align: center;
@@ -249,6 +281,38 @@
         #last_row2 a{
             text-decoration: none;
         }
+        .sub-menu-1{
+            display:none;
+            width: 100%;
+        }
+        #menu-container ul li:hover .sub-menu-1{
+            display: block;
+            position: absolute;
+            margin-top:15px;
+            margin-left: -15px;
+            color: white;
+            background-color: rgb(250, 250, 250);
+        }
+        #menu-container ul li:hover .sub-menu-1 ul{
+            display:block;
+            margin:20px;
+        }
+        #menu-container>div>a:hover .sub-menu-1 ul li{
+            width:400px;
+            color:black;
+        }
+        #cart-container{
+            justify-content: space-between;
+        }
+        #cart-container>div:nth-child(3)
+        {
+            margin-top: 10px;
+        }
+        #cart-container>div:nth-child(2){
+            margin-top: 8px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
 
 
 
@@ -263,12 +327,12 @@
         </div>
         <div id="row_2"></div>
         <div id="logo-container">
-            <div id="logo"><a href="home"><img id="logo-img" src="https://www.bathandbodyworks.in/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dw6cad6a5a/images/no_drop_logo-01.png" alt="Beautiful Works" title="Beautiful Works"></a></div>
+            <div id="logo"><a href="home"><img id="logo-img" src="C:\Users\User\Desktop\kaput-copper-1632\images\Beautifulworks-logos.jpeg" alt="Beautiful Works" title="Beautiful Works"></a></div>
             <div id="cart-container">
                 <div>
                     <form>
                         <input type="text" placeholder="Search by fragrance or product" >
-                        <button type="submit" name="search-button"></button>
+                        <button type="submit" name="search-button" ></button>
                     </form>
                 </div>
                 <div><a href="login.html"><img src="https://www.bathandbodyworks.in/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dw5cd11791/images/MyAccountlogin.png"></a></div>
@@ -276,13 +340,58 @@
             </div>
         </div>
         <div id="menu-container">
-            <div>NEW AND NOW</div>
-            <div>BODY CARE</div>
-            <div>HAND SOAP AND CLEANSERS</div>
-            <div>HOME FRAGRANCE</div>
-            <div>GIFTS</div>
-            <div>TOP OFFERS</div>
-            <div>GET INSPIRED</div>
+            <ul>
+                <li><a href="#">NEW AND NOW</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="product.html">3 WICK CANDLES</a></li>
+                        <li><a href="product.html">ALL NEW ARRIVALS</a></li>
+                        <li><a href="product.html">AROMATHERAPY</a></li>                        
+                        <li><a href="product.html">HAND SOAPS</a></li>                        
+                        <li><a href="product.html">MEN'S SHOP</a></li>                        
+                    </ul>
+                </div>
+                </li>
+                <li><a href="#">BODY CARE</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="product.html">AROMATHERAPY</a></li>
+                            <li><a href="product.html">BATH AND SHOWER</a></li>
+                            <li><a href="product.html">BODY CARE</a></li>                        
+                            <li><a href="product.html">FRAGRANCE</a></li>                        
+                            <li><a href="product.html">MEN'S</a></li>                        
+                            <li><a href="product.html">MOISTURIZERS</a></li>                        
+                            <li><a href="product.html">GIFT SETS</a></li>                        
+                            <li><a href="product.html">BODY CARE OFFERS</a></li>                        
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">HAND SOAP AND CLEANSERS</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="product.html">ALL FRAGRANCE</a></li>
+                            <li><a href="product.html">PERFUME AND COLOGNE</a></li>                       
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">HOME FRAGRANCE</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="product.html">ALL FRAGRANCE</a></li>
+                            <li><a href="product.html">BODY SPRAYS AND MISTS</a></li>
+                            <li><a href="product.html">PERFUME AND COLOGNE</a></li>                                              
+                        </ul>
+                    </div></li>
+                <li><a href="#">GIFTS</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="product.html">BODY CARE GIFT SETS</a></li>                       
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">TOP OFFERS</a></li>
+                <li><a href="#">GET INSPIRED</a></li>
+            </ul>
         </div>
     </header>
     <div id="row_3">
