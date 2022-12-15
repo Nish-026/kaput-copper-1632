@@ -20,10 +20,9 @@
             width:100%;
         }
         #row_4>div{
-            border: 1px solid red;
             margin: auto;
             width:50%;
-            height:500px;
+            height:600px;
         }
         #row_4{
             display:flex;
@@ -36,7 +35,6 @@
         }
         #sign_in>div,#sign_up>div{
             display:flex;
-            border: 1px solid red;
             justify-content: center;
         }
         #sign_up>p{
@@ -46,20 +44,71 @@
             margin-top: 56px;
         }
         #sign_in>div>div,#sign_up>div>div{
-            border: 1px solid red;
             height: 40px;
             padding-top: 10px;
         }
         #sign_in>div>div:nth-child(2),#sign_up>div>div:nth-child(2){
             margin-left: 20px;
         }
-        form{
-            border:1px solid red;
-        }
         #forgotdiv{
-            border:1px solid red;
             display:flex;
+            width:65%;
+            margin:auto;
+            justify-content: space-between;
         }
+        #email,#password{
+            width:100%;
+        }
+        #mail_container{
+            width:65%;
+            margin:auto;
+        }
+        #mail_container input{
+            text-align:center;
+            height: 30px;
+            margin-top: 10px;
+        }
+        #rem{
+            margin-top: 20px;
+        }
+        #sign_in_btn{
+            margin-top:-100px;
+        }
+        #privacy{
+            margin-top:30px;
+            display:block;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #sign_in_btn{
+            color:white;
+            background-color: black;
+            height:40px;
+            width:120px;
+            margin: auto;
+            border-radius: 5px 5px 5px 5px;
+            
+        }
+        #sign_in_btn_div{
+            text-align: center;
+        }
+        #sign_up_img{
+            margin-top: 30px;
+        }
+        #create{
+            margin-top: 30px;
+            color:white;
+            background-color: black;
+            height:40px;
+            width:150px;
+            border-radius: 5px 5px 5px 5px;
+        }
+        /* #wrong{
+            color: rgb(113, 4, 4);
+            background-color: rgb(251, 108, 108);
+            width:65%;
+            margin:auto;
+        } */
     </style>
 </head>
 <body>
@@ -75,11 +124,13 @@
         <div id="sign_in">
             <h4>SIGN IN</h4>
             <div>
-                <div><img src="https://www.bathandbodyworks.in/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dwaf73d2be/images/googlesignin.png"><span>Login with Facebook</span></div>
-                <div><img src="https://www.bathandbodyworks.in/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dwe88a1ab5/images/facebooksignin.png"><span>Login with Google</span></div>
+                <div><img src="https://www.bathandbodyworks.in/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dwe88a1ab5/images/facebooksignin.png"><span>Login with Facebook</span></div>
+                <div><img src="https://www.bathandbodyworks.in/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dwaf73d2be/images/googlesignin.png"><span>Login with Google</span></div>
             </div>
+            <div id="wrong"></div>
             <p>If you already have an account with us, sign in below</p>
             <form>
+                <div id="mail_container">
                 <label>Email</label>
                 <div>
                     <input type="email" placeholder="Enter your email" id="email">
@@ -88,26 +139,30 @@
                 <div>
                     <input type="password" placeholder="Enter your password" id="password">
                 </div>
+                </div>
                 <div id="forgotdiv">
                     <div><h3>Forgot Password?</h3></div>
-                    <div><input type="checkbox"><span>Remember Me</span>     </div>
+                    <div><input type="checkbox" id="rem"><span>Remember Me</span></div>
+                </div>
+                <a href="h" id="privacy">Privacy Policy</a>
+                <div id="sign_in_btn_div">
+                    <button id="sign_in_btn">SIGN IN</button>
                 </div>
             </form>
-            <a href="h">Privacy Policy</a>
-            <button>SIGN IN</button>
         </div>
         <div id="sign_up">
             <h4>SIGN UP</h4>
             <p>Create an account to access the best of your favorite store</p>
             <div>
-                <div><img src="https://www.bathandbodyworks.in/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dwaf73d2be/images/googlesignin.png"><span>Login with Facebook</span></div>
-                <div><img src="https://www.bathandbodyworks.in/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dwe88a1ab5/images/facebooksignin.png"><span>Login with Google</span></div>
+                <div><img src="https://www.bathandbodyworks.in/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dwe88a1ab5/images/facebooksignin.png"><span>Login with Facebook</span></div>
+                <div><img src="https://www.bathandbodyworks.in/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dwaf73d2be/images/googlesignin.png"><span>Login with Google</span></div>
             </div>
             <div>
-            <img src="https://www.bathandbodyworks.in/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dw75052a29/images/benifits-mbl.png">
+            <img src="https://www.bathandbodyworks.in/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dw75052a29/images/benifits-mbl.png" id="sign_up_img">
             </div>
-            <div><a href="signup.html"><button>CREATE ACCOUNT</button></a></div>
+            <div><a href="signup.html"><button id="create">CREATE ACCOUNT</button></a></div>
         </div>
     </div>
 </body>
+<script src="login.js"></script>
 </html>
