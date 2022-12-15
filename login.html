@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            text-decoration: none;
+            color:black;
+            margin-left: 20px;
+        }
+        #row_2,#row_3,#row_4{
+            width:80%;
+            margin:auto;
+            margin-top: 50px;
+        }
+        #row_2 img{
+            width:100%;
+        }
+        #row_4>div{
+            border: 1px solid red;
+            margin: auto;
+            width:50%;
+            height:500px;
+        }
+        #row_4{
+            display:flex;
+        }
+        h4{
+            text-align: center;
+        }
+        #sign_in>p{
+            margin-left: 90px;
+        }
+        #sign_in>div,#sign_up>div{
+            display:flex;
+            border: 1px solid red;
+            justify-content: center;
+        }
+        #sign_up>p{
+            text-align: center;
+        }
+        #sign_in>div{
+            margin-top: 56px;
+        }
+        #sign_in>div>div,#sign_up>div>div{
+            border: 1px solid red;
+            height: 40px;
+            padding-top: 10px;
+        }
+        #sign_in>div>div:nth-child(2),#sign_up>div>div:nth-child(2){
+            margin-left: 20px;
+        }
+        form{
+            border:1px solid red;
+        }
+        #forgotdiv{
+            border:1px solid red;
+            display:flex;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html">HOME</a>
+    <div id="row_2">
+        <img src="https://www.bathandbodyworks.in/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dw1df43410/images/signin.png" >
+    </div>
+    <div id="row_3">
+        <h2>Sign In or Sign Up</h2>
+        <hr size="1" width="100%" color="black"> 
+    </div>
+    <div id="row_4">
+        <div id="sign_in">
+            <h4>SIGN IN</h4>
+            <div>
+                <div><img src="https://www.bathandbodyworks.in/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dwaf73d2be/images/googlesignin.png"><span>Login with Facebook</span></div>
+                <div><img src="https://www.bathandbodyworks.in/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dwe88a1ab5/images/facebooksignin.png"><span>Login with Google</span></div>
+            </div>
+            <p>If you already have an account with us, sign in below</p>
+            <form>
+                <label>Email</label>
+                <div>
+                    <input type="email" placeholder="Enter your email" id="email">
+                </div>
+                <label>Password</label>
+                <div>
+                    <input type="password" placeholder="Enter your password" id="password">
+                </div>
+                <div id="forgotdiv">
+                    <div><h3>Forgot Password?</h3></div>
+                    <div><input type="checkbox"><span>Remember Me</span>     </div>
+                </div>
+            </form>
+            <a href="h">Privacy Policy</a>
+            <button>SIGN IN</button>
+        </div>
+        <div id="sign_up">
+            <h4>SIGN UP</h4>
+            <p>Create an account to access the best of your favorite store</p>
+            <div>
+                <div><img src="https://www.bathandbodyworks.in/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dwaf73d2be/images/googlesignin.png"><span>Login with Facebook</span></div>
+                <div><img src="https://www.bathandbodyworks.in/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dwe88a1ab5/images/facebooksignin.png"><span>Login with Google</span></div>
+            </div>
+            <div>
+            <img src="https://www.bathandbodyworks.in/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dw75052a29/images/benifits-mbl.png">
+            </div>
+            <div><a href="signup.html"><button>CREATE ACCOUNT</button></a></div>
+        </div>
+    </div>
+</body>
+</html>
