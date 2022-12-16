@@ -14,6 +14,7 @@ form.addEventListener("submit", function (event) {
     alert("Kindly fill all the details!");
   } else {
     localStorage.setItem("user-list", JSON.stringify(data));
-    window.location.href="myaccount.html"
+    alert("Sign Up Successful")
+    window.location.href="index.html"
   }
 });
