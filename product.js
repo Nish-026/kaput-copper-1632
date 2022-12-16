@@ -1,9 +1,5 @@
 let container= document.getElementById("main_products_div");
 let fetchedData=[];
-
-
-
-
 fetch("https://639b0af431877e43d680266b.mockapi.io/products")
 .then((responseObject)=>{
   return responseObject.json();
@@ -55,7 +51,8 @@ function display(data){
       {
         cartdata=[];
       }
-        cartdata.push(element);
+        alert("Product Added To Cart")
+        cartdata.push({...element,quantity:1});
         localStorage.setItem("cart-list",JSON.stringify(cartdata))
     })
 

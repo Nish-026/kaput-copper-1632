@@ -1,1 +1,71 @@
-"hello"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cart1{
+            text-align: center;
+            font-size:40px;
+        }
+        .cart1>img{
+            width:40%;
+        }
+        #main_cart{
+            display:flex;
+            width:90%;
+            /* border:1px solid red; */
+            margin:auto;
+        }
+        /* #main_cart>div{
+            border:1px solid red;
+        } */
+        #left{
+            width:70%;
+        }
+        #right{
+
+            /* border: 1px solid black; */
+        }
+        #right_container{
+            width:30%;
+        }
+        #innerright{
+            display:flex;
+            justify-content: space-between;
+        }
+        #innerright>div{
+            /* border: 1px solid red; */
+        }
+        #checkout{
+            width:100%;
+            background-color: #424242;
+            color:white;
+            border:none;
+            padding:10px;
+        }
+        #tpdiv{
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cart1"><img src="C:\Users\User\Desktop\kaput-copper-1632\images\Screenshot 2022-12-16 145242.png"></div>
+    <div class="cart1" id="empty"><p>Your Shopping Cart is Empty</p></div>
+    <div id="main_cart">
+        <div id="left"></div>
+        <div id="right_container">
+            <div id="right">
+                <div id="innerright">
+                    <div><p>TOTAL AMOUNT</p></div>
+                    <div id="tpdiv"><span id="totalprice">0</span></div>
+                </div>
+                <button id="checkout">CONTINUE CHECKOUT</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="cart.js"></script>
