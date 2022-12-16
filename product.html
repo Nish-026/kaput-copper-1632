@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .side-nav{
+            width: 200px;
+            height: 100vh;
+            border:1px solid red;
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+        header{
+            height:230px;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            background-color: white;
+        }
+        header>div{
+            border:1px white solid;
+        }
+        #logo-container{
+            display:flex;
+            margin-bottom: 20px;
+        }
+        #logo{
+            width:20%;
+            margin-left: 40%;
+        }
+        #logo img{
+            width:100%;
+            height: 100%;
+        }
+        #cart-container{
+            width:30%;
+            display: flex;
+            margin-left: 50px;
+        }
+        #menu-container{
+            text-align: center;
+            
+        }
+        #menu-container ul{
+            display:inline-flex;
+            list-style: none;
+            margin: auto;
+        }
+        #menu-container ul li{
+            width: 120px;
+            font-size: small;
+            margin:15px;
+        }
+        #menu-container ul li a{
+            text-decoration: none;
+            color:black;
+        }
+        #menu-container ul li:hover{
+         text-decoration: underline;
+         text-decoration-color: rgb(249, 211, 197);
+         text-decoration-thickness: 1px;
+        }
+        #row_2{
+            height: 40px;
+            background-color: #f2f2f2;
+        }
+        form input,button{
+            margin-top: 10px;
+            border: none;
+        }
+        form{
+            border: 1px solid black;
+            height: 90%;
+            border-radius: 2px 2px 2px 2px;
+        }
+        form button>img{
+            width:10px;
+            height: 10px;
+        }
+        form input{
+            width:280px;
+        }
+        #row_1>div{
+            text-align: center;
+            background-color: aliceblue;
+            width:20%;
+            margin:auto;
+            height: 100%;
+        }
+        #row_1{
+            background-color: rgb(156, 225, 255);
+        }
+        #row_footer1
+        {
+            border:1px solid red;
+            width:90%;
+            margin:auto;
+            margin-bottom: 20px;
+            padding-bottom: 4rem;
+        }
+        .footer
+        {
+            display:flex;
+            border: 1px solid black;
+            justify-content: space-between;
+        }
+        .F{
+            display: flex;
+            flex-direction: column;
+            border: 1px solid black;
+
+        }
+        .footer-1 h4{
+            margin-bottom: 0rem;
+        }
+        .F a{
+            margin-bottom: 1rem;
+            text-decoration: none;
+        }
+        #emailid{
+            width:150px;
+            height: 1.8rem;
+        }
+        .sbtn{
+            width:80px;
+            height: 1.9rem;
+            background-color: rgb(44, 44, 44);
+            color:aliceblue;
+            border:none;
+            margin:0px;
+        }
+        #insta{
+            width:25px;
+            height:25px;
+        }
+        #socialmediacontainer{
+            display:flex;
+        }
+        #socialmediacontainer>div{
+            width:30px;
+        }
+        #last_row{
+            border:1px solid red;
+            width:90%;
+            margin:auto;
+        }
+        #last_row1>div{
+            /* border:1px solid rgb(23, 18, 18); */
+            width:200px;
+        }
+        #last_row1{
+            display:flex;
+            justify-content: space-between;
+        }
+        #last_row1>div:nth-child(3){
+            /* border:1px solid rgb(23, 18, 18); */
+            width:400px;
+        }
+        #last_row1>div:nth-child(3)>img{
+            margin-top: 20px;
+            width:100%;
+        }
+        #last_row2{
+            /* border: 1px solid red; */
+            margin-top: 60px;
+            display:flex;
+            justify-content: space-between;
+            padding-bottom: 50px;
+        }
+        #last_row2 a{
+            text-decoration: none;
+        }
+        .sub-menu-1{
+            display:none;
+            width: 100%;
+        }
+        #menu-container ul li:hover .sub-menu-1{
+            display: block;
+            position: absolute;
+            margin-top:15px;
+            margin-left: -15px;
+            color: white;
+            background-color: rgb(250, 250, 250);
+        }
+        #menu-container ul li:hover .sub-menu-1 ul{
+            display:block;
+            margin:20px;
+        }
+        #menu-container>div>a:hover .sub-menu-1 ul li{
+            width:400px;
+            color:black;
+        }
+        #cart-container{
+            justify-content: space-between;
+        }
+        #cart-container>div:nth-child(3)
+        {
+            margin-top: 10px;
+        }
+        #cart-container>div:nth-child(2){
+            margin-top: 8px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        #home{
+            text-decoration: none;
+            margin: 40px 40px 40px 40px;
+        }
+        #main-content{
+            margin-top: 20px;
+            display:flex;
+            justify-content: space-between;
+        }
+        .products{
+            border:1px solid red;
+            width:75%;
+        }
+        .products p{
+            font-size: 25px;
+            margin-bottom: 5px;
+        }
+        .products hr{
+            margin-top: 0px;
+        }
+        #sortdiv{
+            margin-left:80%;
+            display:flex;
+        }
+        #sortdiv>p{
+            font-size: 15px;
+        }
+        #main_products_div{
+            width:100%;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 20px,20px;
+        }
+        #main_products_div img{
+            width:100%;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div id="row_1">
+            <div>
+                <img src="">
+            </div>
+        </div>
+        <div id="row_2"></div>
+        <div id="logo-container">
+            <div id="logo"><a href="home"><img id="logo-img" src="C:\Users\User\Desktop\kaput-copper-1632\images\Beautifulworks-logos.jpeg" alt="Beautiful Works" title="Beautiful Works"></a></div>
+            <div id="cart-container">
+                <div>
+                    <form>
+                        <input type="text" placeholder="Search by fragrance or product" >
+                        <button type="submit" name="search-button" ></button>
+                    </form>
+                </div>
+                <div><a href="login.html"><img src="https://www.bathandbodyworks.in/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dw5cd11791/images/MyAccountlogin.png"></a></div>
+                <div><img src="https://www.bathandbodyworks.in/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dw04072d5a/images/AddToBag.png"></div>
+            </div>
+        </div>
+        <div id="menu-container">
+            <ul>
+                <li><a href="#">NEW AND NOW</a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="product.html">3 WICK CANDLES</a></li>
+                        <li><a href="product.html">ALL NEW ARRIVALS</a></li>
+                        <li><a href="product.html">AROMATHERAPY</a></li>                        
+                        <li><a href="product.html">HAND SOAPS</a></li>                        
+                        <li><a href="product.html">MEN'S SHOP</a></li>                        
+                    </ul>
+                </div>
+                </li>
+                <li><a href="#">BODY CARE</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="product.html">AROMATHERAPY</a></li>
+                            <li><a href="product.html">BATH AND SHOWER</a></li>
+                            <li><a href="product.html">BODY CARE</a></li>                        
+                            <li><a href="product.html">FRAGRANCE</a></li>                        
+                            <li><a href="product.html">MEN'S</a></li>                        
+                            <li><a href="product.html">MOISTURIZERS</a></li>                        
+                            <li><a href="product.html">GIFT SETS</a></li>                        
+                            <li><a href="product.html">BODY CARE OFFERS</a></li>                        
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">HAND SOAP AND CLEANSERS</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="product.html">ALL FRAGRANCE</a></li>
+                            <li><a href="product.html">PERFUME AND COLOGNE</a></li>                       
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">HOME FRAGRANCE</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="product.html">ALL FRAGRANCE</a></li>
+                            <li><a href="product.html">BODY SPRAYS AND MISTS</a></li>
+                            <li><a href="product.html">PERFUME AND COLOGNE</a></li>                                              
+                        </ul>
+                    </div></li>
+                <li><a href="#">GIFTS</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="product.html">BODY CARE GIFT SETS</a></li>                       
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">TOP OFFERS</a></li>
+                <li><a href="#">GET INSPIRED</a></li>
+            </ul>
+        </div>
+    </header>
+    <a href="index.html" id="home"> HOME</a>
+    <hr size="0.5" width="100%" color="lightgrey">
+    <div id="main-content">
+            <div class="side-nav">
+                <p><a href="product.html">AROMATHERAPY</a></p>
+                <ul>
+                    <li><a href="product.html">ALL AROMATHERAPY</a></li>
+                    <li><a href="product.html">MOISTURIZERS</a></li>
+                </ul>
+                <p><a href="product.html">BATH AND SHOWER</a></p>
+                <ul>
+                    <li><a href="product.html">ALL BATH AND SHOWER</a></li>
+                    <li><a href="product.html">BATH ACCESSORIES</a></li>
+                    <li><a href="product.html">BODY SCRUB</a></li>                    
+                    <li>BODY WASH AND SHOWER GEL</li>                    
+                </ul>
+                <p>BODY CARE</p>
+                <ul>
+                    <li>ALL FRAGRANCE</li>
+                    <li>PERFUME AND COLOGNE</li>                 
+                </ul>
+                <p>FRAGRANCE</p>
+                <ul>
+                    <li>ALL FRAGRANCE</li>
+                    <li>BODY SPRAYS AND MISTS</li>
+                    <li>PERFUME AND COLOGNE</li>                                     
+                </ul>
+
+
+    
+            </div>
+
+            <div class="products">
+                <p>ALL PRODUCTS</p>
+                <hr size="1" width="100%" color="grey">
+                <div id="sortdiv">
+                    <p>SORT BY</p>
+                    <select>
+                        <option value="">Select a Category</option>
+                        <option value="Descending">High-To-Low</option>
+                        <option value="Ascending">Low-To-High</option>
+                      </select>
+                </div>
+                <div id="main_products_div">
+
+                </div>
+
+            </div>
+    </div>
+
+    <div id="row_footer1">
+        <div class="footer">
+            <div class="F footer-1">
+                <h4>Get email offers and latest news from Bath & Body Works!</h4>
+                <div>
+                    <h4>ENTER EMAIL</h4>
+                    <input type="email" id="emailid">
+                    <button class="ibtn">i</button>
+                </div>
+                <!-- .ibtn {
+    border: none;
+    margin-left: 12px;
+    margin-top: 7px;
+    border-radius: 50%;
+    font-weight: 900;
+} -->
+                <div>
+                    <h4>CONFIRM EMAIL</h4>
+                    <div>
+                        <input type="email" id="emailid">
+                        <button class="sbtn">SUBMIT</button>
+                    </div>
+                </div>
+            </div>
+            <div class="F footer-2">
+                <h4>CUSTOMER CARE</h4>
+                <a href="#">Help & FAQs</a>
+                <a href="#">Shipping</a>
+                <a href="#">Returns & Exchanges</a>
+                <a href="#">Order Tracking</a>                
+                <a href="#">Contact Us</a>                
+            </div>
+            <div class="F footer-3">
+                <h4>MY ACCOUNT</h4>
+                <a href="#">Sign In or Sign Up</a>
+                <a href="#">Order History</a>
+                <a href="#">My Love-It List</a>             
+            </div>
+            <div class="F footer-4">
+                <h4>DISCOVER</h4>
+                <a href="#">Our Story</a>
+                <a href="#">Shop by Fragrance</a>
+                <a href="#">New & Now</a>            
+            </div>
+            <div class="F footer-5">
+                <h4>FIND US</h4>
+                <a href="#">Store Locator</a>
+                <a href="#">Global Locations</a>            
+            </div>
+        </div>
+    </div>
+    <div id="last_row">
+        <div id="last_row1">
+            <div>
+                <p>GET CONNECTED</p>
+                <div id="socialmediacontainer">
+                    <div><img src="https://www.bathandbodyworks.in/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw384a0b5a/Group%2011.png"></div>
+                    <div></div>
+                    <div></div>
+                    <div><img src="https://toppng.com/uploads/preview/insta-icon-circle-ltblue-instagram-icon-in-white-115534671818ks37kfokm.png" id="insta"></div>
+                    <div></div>
+                </div>
+            </div>
+            <div></div>
+            <div><img src="https://www.bathandbodyworks.in/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dwfa8fc09a/Happiness_Guaranteedtimes.jpg"></div>
+        </div>
+        <div id="last_row2">
+            <div>
+                <img src="https://www.bathandbodyworks.in/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw2f6d41ce/secured.png">
+            </div>
+            <div>
+                <a href="h">Site Map |</a>
+                <a href="h">Terms Of Use |</a>
+                <a href="h">Privacy Policy</a>
+                <p>@Bath & Body Works. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="product.js"></script>
