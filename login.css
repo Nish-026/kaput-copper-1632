@@ -1,0 +1,97 @@
+a{
+    text-decoration: none;
+    color:black;
+    margin-left: 20px;
+}
+#row_2,#row_3,#row_4{
+    width:80%;
+    margin:auto;
+    margin-top: 50px;
+}
+#row_2 img{
+    width:100%;
+}
+#row_4>div{
+    margin: auto;
+    width:50%;
+    height:600px;
+}
+#row_4{
+    display:flex;
+}
+h4{
+    text-align: center;
+}
+#sign_in>p{
+    margin-left: 90px;
+}
+#sign_in>div,#sign_up>div{
+    display:flex;
+    justify-content: center;
+}
+#sign_up>p{
+    text-align: center;
+}
+#sign_in>div{
+    margin-top: 56px;
+}
+#sign_in>div>div,#sign_up>div>div{
+    height: 40px;
+    padding-top: 10px;
+}
+#sign_in>div>div:nth-child(2),#sign_up>div>div:nth-child(2){
+    margin-left: 20px;
+}
+#forgotdiv{
+    display:flex;
+    width:65%;
+    margin:auto;
+    justify-content: space-between;
+}
+#email,#password{
+    width:100%;
+}
+#mail_container{
+    width:65%;
+    margin:auto;
+}
+#mail_container input{
+    text-align:center;
+    height: 30px;
+    margin-top: 10px;
+}
+#rem{
+    margin-top: 20px;
+}
+#sign_in_btn{
+    margin-top:-100px;
+}
+#privacy{
+    margin-top:30px;
+    display:block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#sign_in_btn{
+    color:white;
+    background-color: black;
+    height:40px;
+    width:120px;
+    margin: auto;
+    border-radius: 5px 5px 5px 5px;
+    
+}
+#sign_in_btn_div{
+    text-align: center;
+}
+#sign_up_img{
+    margin-top: 30px;
+}
+#create{
+    margin-top: 30px;
+    color:white;
+    background-color: black;
+    height:40px;
+    width:150px;
+    border-radius: 5px 5px 5px 5px;
+}
