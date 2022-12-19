@@ -13,201 +13,10 @@
             margin-top: 40px;
             margin-left: 50px;
         }
-        header{
-            height:230px;
-            position: sticky;
-            top: 0;
-            z-index: 999;
-            background-color: white;
-        }
-        header>div{
-            border:1px white solid;
-        }
-        #logo-container{
-            display:flex;
-            margin-bottom: 20px;
-        }
-        #logo{
-            width:20%;
-            margin-left: 40%;
-        }
-        #logo img{
-            width:100%;
-            height: 100%;
-        }
-        #cart-container{
-            width:30%;
-            display: flex;
-            margin-left: 50px;
-        }
-        #menu-container{
-            text-align: center;
-            
-        }
-        #menu-container ul{
-            display:inline-flex;
-            list-style: none;
-            margin: auto;
-        }
-        #menu-container ul li{
-            width: 120px;
-            font-size: small;
-            margin:15px;
-        }
-        #menu-container ul li a{
-            text-decoration: none;
-            color:black;
-        }
-        #menu-container ul li:hover{
-         text-decoration: underline;
-         text-decoration-color: rgb(249, 211, 197);
-         text-decoration-thickness: 1px;
-        }
-        #row_2{
-            height: 40px;
-            background-color: #f2f2f2;
-        }
-        form input,button{
-            margin-top: 10px;
-            border: none;
-        }
-        form{
-            border: 1px solid black;
-            height: 90%;
-            border-radius: 2px 2px 2px 2px;
-        }
-        form button>img{
-            width:10px;
-            height: 10px;
-        }
-        form input{
-            width:280px;
-        }
-        #row_1>div{
-            text-align: center;
-            background-color: aliceblue;
-            width:20%;
-            margin:auto;
-            height: 100%;
-        }
-        #row_1{
-            background-color: rgb(156, 225, 255);
-        }
-        #row_footer1
-        {
-            border:1px solid red;
-            width:90%;
-            margin:auto;
-            margin-bottom: 20px;
-            padding-bottom: 4rem;
-        }
-        .footer
-        {
-            display:flex;
-            border: 1px solid black;
-            justify-content: space-between;
-        }
-        .F{
-            display: flex;
-            flex-direction: column;
-            border: 1px solid black;
-
-        }
-        .footer-1 h4{
-            margin-bottom: 0rem;
-        }
-        .F a{
-            margin-bottom: 1rem;
-            text-decoration: none;
-        }
-        #emailid{
-            width:150px;
-            height: 1.8rem;
-        }
-        .sbtn{
-            width:80px;
-            height: 1.9rem;
-            background-color: rgb(44, 44, 44);
-            color:aliceblue;
-            border:none;
-            margin:0px;
-        }
-        #insta{
-            width:25px;
-            height:25px;
-        }
-        #socialmediacontainer{
-            display:flex;
-        }
-        #socialmediacontainer>div{
-            width:30px;
-        }
-        #last_row{
-            border:1px solid red;
-            width:90%;
-            margin:auto;
-        }
-        #last_row1>div{
-            /* border:1px solid rgb(23, 18, 18); */
-            width:200px;
-        }
-        #last_row1{
-            display:flex;
-            justify-content: space-between;
-        }
-        #last_row1>div:nth-child(3){
-            /* border:1px solid rgb(23, 18, 18); */
-            width:400px;
-        }
-        #last_row1>div:nth-child(3)>img{
-            margin-top: 20px;
-            width:100%;
-        }
-        #last_row2{
-            /* border: 1px solid red; */
-            margin-top: 60px;
-            display:flex;
-            justify-content: space-between;
-            padding-bottom: 50px;
-        }
-        #last_row2 a{
-            text-decoration: none;
-        }
-        .sub-menu-1{
-            display:none;
-            width: 100%;
-        }
-        #menu-container ul li:hover .sub-menu-1{
-            display: block;
-            position: absolute;
-            margin-top:15px;
-            margin-left: -15px;
-            color: white;
-            background-color: rgb(250, 250, 250);
-        }
-        #menu-container ul li:hover .sub-menu-1 ul{
-            display:block;
-            margin:20px;
-        }
-        #menu-container>div>a:hover .sub-menu-1 ul li{
-            width:400px;
-            color:black;
-        }
-        #cart-container{
-            justify-content: space-between;
-        }
-        #cart-container>div:nth-child(3)
-        {
-            margin-top: 10px;
-        }
-        #cart-container>div:nth-child(2){
-            margin-top: 8px;
-            margin-left: 20px;
-            margin-right: 20px;
-        }
         #home{
             text-decoration: none;
             margin: 40px 40px 40px 40px;
+            color:black;
         }
         #main-content{
             margin-top: 20px;
@@ -237,6 +46,7 @@
             display: grid;
             grid-template-columns: repeat(4,1fr);
             gap: 20px,20px;
+            margin-bottom: 50px;
         }
         #main_products_div img{
             width:100%;
@@ -254,29 +64,272 @@
             margin-left: -40px;
         }
 
+              
+        body{
+    margin:0px;
+}
+header{
+    height:230px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: white;
+}
+header>div{
+    border:0.5px white solid;
+}
+#logo-container{
+    display:flex;
+    margin-bottom: 20px;
+}
+#logo{
+    width:20%;
+    margin-left: 40%;
+}
+#logo img{
+    width:100%;
+    height: 100%;
+}
+#cart-container{
+    width:30%;
+    display: flex;
+    margin-left: 50px;
+}
+#menu-container{
+    text-align: center;
+    
+}
+#menu-container ul{
+    display:inline-flex;
+    list-style: none;
+    margin: auto;
+}
+#menu-container ul li{
+    width: 120px;
+    font-size: small;
+    margin:15px;
+}
+#menu-container ul li a{
+    text-decoration: none;
+    color:black;
+}
+#menu-container ul li:hover{
+ text-decoration: underline;
+ text-decoration-color: rgb(249, 211, 197);
+ text-decoration-thickness: 1px;
+}
+#row_2{
+    height: 40px;
+    background-color: #f2f2f2;
+    border:0.5px solid #f2f2f2;
 
+}
+#search input,button{
+    margin-top: 10px;
+    border: none;
+}
+#search{
+    border: 1px solid black;
+    height: 90%;
+    border-radius: 2px 2px 2px 2px;
+}
+#search button>img{
+    width:10px;
+    height: 10px;
+}
+#search input{
+    width:280px;
+}
+#row_1>div{
+    text-align: center;
+    background-color: aliceblue;
+    width:20%;
+    margin:auto;
+    height: 100%;
+    padding: 1px 1px;
+}
+#row_1{
+    background-color: #f2f2f2;
+    border:0.5px solid #f2f2f2;
+}
+#row_5{
+    width:80%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+#row_5>img{
+    width:100%;
+}
+#row_6{
+    width:80%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+#row_6>img{
+    width:100%;
+}
+#row_7{
+    width:80%;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px 20px;
+    margin:auto;
+    margin-bottom: 20px;
+}
+#cont_row_9{
+    display:flex;
+    text-align: center;
+    color: grey;
+}
+#cont_row_9 img{
+    width:100%;
+}
+#row_10{
+    /* border: 1px solid red; */
+    width:80%;
+    margin:auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+#row_footer1
+{
+    /* border:1px solid red; */
+    width:90%;
+    margin:auto;
+    margin-bottom: 20px;
+    padding-bottom: 4rem;
+}
+.footer
+{
+    display:flex;
+    /* border: 1px solid black; */
+    justify-content: space-between;
+}
+.F{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+
+}
+.footer-1 h4{
+    margin-bottom: 0rem;
+}
+.F a{
+    margin-bottom: 1rem;
+    margin-left: 2px;
+    text-decoration: none;
+    color:grey;
+}
+#emailid{
+    width:150px;
+    height: 1.8rem;
+}
+.sbtn{
+    width:80px;
+    height: 1.9rem;
+    background-color: rgb(44, 44, 44);
+    color:aliceblue;
+    border:none;
+    margin:0px;
+}
+#insta{
+    width:25px;
+    height:25px;
+}
+#socialmediacontainer{
+    display:flex;
+}
+#socialmediacontainer>div{
+    width:30px;
+}
+#last_row{
+    /* border:1px solid red; */
+    width:90%;
+    margin:auto;
+}
+#last_row1>div{
+    /* border:1px solid rgb(23, 18, 18); */
+    width:200px;
+}
+#last_row1{
+    display:flex;
+    justify-content: space-between;
+}
+#last_row1>div:nth-child(3){
+    /* border:1px solid rgb(23, 18, 18); */
+    width:400px;
+}
+#last_row1>div:nth-child(3)>img{
+    margin-top: 20px;
+    width:100%;
+}
+#last_row2{
+    /* border: 1px solid red; */
+    margin-top: 60px;
+    display:flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+#last_row2 a{
+    text-decoration: none;
+}
+.sub-menu-1{
+    display:none;
+    width: 100%;
+}
+#menu-container ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    margin-top:15px;
+    margin-left: -15px;
+    color: white;
+    background-color: rgb(250, 250, 250);
+}
+#menu-container ul li:hover .sub-menu-1 ul{
+    display:block;
+    margin:20px;
+}
+#menu-container>div>a:hover .sub-menu-1 ul li{
+    width:400px;
+    color:black;
+}
+#cart-container{
+    justify-content: space-between;
+}
+#cart-container>div:nth-child(3)
+{
+    margin-top: 10px;
+}
+#cart-container>div:nth-child(2){
+    margin-top: 8px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#row_1>img{
+    margin-top: -2px;
+    width:100%;
+    height: 50px;
+}
 
     </style>
 </head>
 <body>
     <header>
         <div id="row_1">
-            <div>
-                <img src="">
-            </div>
+            <img src="C:\Users\User\Desktop\kaput-copper-1632\images\Screenshot 2022-12-16 131746.png" >
         </div>
         <div id="row_2"></div>
         <div id="logo-container">
             <div id="logo"><a href="home"><img id="logo-img" src="C:\Users\User\Desktop\kaput-copper-1632\images\Beautifulworks-logos.jpeg" alt="Beautiful Works" title="Beautiful Works"></a></div>
             <div id="cart-container">
                 <div>
-                    <form>
+                    <form id="search">
                         <input type="text" placeholder="Search by fragrance or product" >
                         <button type="submit" name="search-button" ></button>
                     </form>
                 </div>
                 <div><a href="login.html"><img src="https://www.bathandbodyworks.in/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dw5cd11791/images/MyAccountlogin.png"></a></div>
-                <div><img src="https://www.bathandbodyworks.in/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dw04072d5a/images/AddToBag.png"></div>
+                <div><a href="cart.html"><img src="https://www.bathandbodyworks.in/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dw04072d5a/images/AddToBag.png"></a></div>
             </div>
         </div>
         <div id="menu-container">
@@ -284,7 +337,7 @@
                 <li><a href="#">NEW AND NOW</a>
                 <div class="sub-menu-1">
                     <ul>
-                        <li><a href="product.html">3 WICK CANDLES</a></li>
+                        <li><a href="product.html">BATH AND SHOWER</a></li>
                         <li><a href="product.html">ALL NEW ARRIVALS</a></li>
                         <li><a href="product.html">AROMATHERAPY</a></li>                        
                         <li><a href="product.html">HAND SOAPS</a></li>                        
