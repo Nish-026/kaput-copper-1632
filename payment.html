@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+#container {
+  border: 1px solid rgb(240, 239, 239);
+  width: 35%;
+  border-radius: 15px;
+  margin: auto;
+  margin-top: 20px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+#image > img {
+  width: 100%;
+  margin: auto;
+  display: block;
+  margin-top: 10px;
+  border-radius: 15px ;
+  
+}
+
+
+
+h3 {
+  text-align: center;
+  border: 0px solid green;
+}
+form {
+  width: 250px;
+  margin: auto;
+}
+form label {
+  display: flex;
+  margin-top: 10px;
+
+}
+form input {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid rgb(52, 52, 52);
+  border-radius: 10px;
+}
+
+
+
+button {
+    /* border: 5px solid white; */
+  background: #ffffff;
+  border: none;
+  border-radius: 1px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #fefefe;
+  background-color: #424242;
+  cursor: pointer;
+  padding: 10px 12px;
+  text-align: center;
+  margin-top: 30px;
+  font-weight: 900;
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width:100%;
+}
+
+button:hover,
+button:active {
+  background-color: rgb(133, 244, 157);
+  background-position: 0 0;
+  color: #000000;
+}
+
+button:active {
+  opacity: 0.5;
+}
+
+    </style>
+
+</head>
+<body>
+  
+    
+
+<div id="container">
+
+<h3>Enter Your Card Details</h3>
+<form>
+<label>Card Number</label>
+<input type="password" placeholder=" Enter Card Number"  id="Email" >
+<label>Name on Card</label>
+<input type="text" placeholder="Enter Card Holder Name" id="mobile">
+<label>  Expiry Date </label>
+<input type="date">
+<label>CVV</label>
+<input type="password">
+<div id="image"> <img src=" https://support.direct.ingenico.com/contentAsset/image/e26cb25b-7c66-4950-9ee1-86376f2e8cdb/fileAsset" alt=""> </div>
+<button>Pay Now</button>
+</form>
+ </div>
+
+</body>
+</html>
+<script src="payment.js"></script>

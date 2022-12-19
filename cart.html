@@ -5,15 +5,301 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="login.css">
     <style>
-        
-        /* #wrong{
-            color: rgb(113, 4, 4);
-            background-color: rgb(251, 108, 108);
-            width:65%;
+        .cart12{
+            text-align: center;
+            font-size:40px;
+        }
+        .cart12>img{
+            width:40%;
+        }
+        #main_cart{
+            display:flex;
+            width:90%;
+            /* border:1px solid red; */
             margin:auto;
+        }
+        /* #main_cart>div{
+            border:1px solid red;
         } */
+        #left{
+            width:70%;
+        }
+        #right{
+
+            /* border: 1px solid black; */
+        }
+        #right_container{
+            width:30%;
+        }
+        #innerright{
+            display:flex;
+            justify-content: space-between;
+        }
+        #innerright>div{
+            /* border: 1px solid red; */
+        }
+        #checkout{
+            width:100%;
+            background-color: #424242;
+            border:none;
+            padding:10px;
+        }
+        #checkout>a
+        {
+            color:white;
+            text-decoration: none;
+        }
+        #tpdiv{
+            margin-top: 15px;
+        }
+
+               
+body{
+    margin:0px;
+}
+header{
+    height:230px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: white;
+}
+header>div{
+    border:0.5px white solid;
+}
+#logo-container{
+    display:flex;
+    margin-bottom: 20px;
+}
+#logo{
+    width:20%;
+    margin-left: 40%;
+}
+#logo img{
+    width:100%;
+    height: 100%;
+}
+#cart-container{
+    width:30%;
+    display: flex;
+    margin-left: 50px;
+}
+#menu-container{
+    text-align: center;
+    
+}
+#menu-container ul{
+    display:inline-flex;
+    list-style: none;
+    margin: auto;
+}
+#menu-container ul li{
+    width: 120px;
+    font-size: small;
+    margin:15px;
+}
+#menu-container ul li a{
+    text-decoration: none;
+    color:black;
+}
+#menu-container ul li:hover{
+ text-decoration: underline;
+ text-decoration-color: rgb(249, 211, 197);
+ text-decoration-thickness: 1px;
+}
+#row_2{
+    height: 40px;
+    background-color: #f2f2f2;
+    border:0.5px solid #f2f2f2;
+
+}
+#search input,button{
+    margin-top: 10px;
+    border: none;
+}
+#search{
+    border: 1px solid black;
+    height: 90%;
+    border-radius: 2px 2px 2px 2px;
+}
+#search button>img{
+    width:10px;
+    height: 10px;
+}
+#search input{
+    width:280px;
+}
+#row_1>div{
+    text-align: center;
+    background-color: aliceblue;
+    width:20%;
+    margin:auto;
+    height: 100%;
+    padding: 1px 1px;
+}
+#row_1{
+    background-color: #f2f2f2;
+    border:0.5px solid #f2f2f2;
+}
+#row_5{
+    width:80%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+#row_5>img{
+    width:100%;
+}
+#row_6{
+    width:80%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+#row_6>img{
+    width:100%;
+}
+#row_7{
+    width:80%;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px 20px;
+    margin:auto;
+    margin-bottom: 20px;
+}
+#cont_row_9{
+    display:flex;
+    text-align: center;
+    color: grey;
+}
+#cont_row_9 img{
+    width:100%;
+}
+#row_10{
+    /* border: 1px solid red; */
+    width:80%;
+    margin:auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+#row_footer1
+{
+    /* border:1px solid red; */
+    width:90%;
+    margin:auto;
+    margin-bottom: 20px;
+    padding-bottom: 4rem;
+}
+.footer
+{
+    display:flex;
+    /* border: 1px solid black; */
+    justify-content: space-between;
+}
+.F{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+
+}
+.footer-1 h4{
+    margin-bottom: 0rem;
+}
+.F a{
+    margin-bottom: 1rem;
+    margin-left: 2px;
+    text-decoration: none;
+    color:grey;
+}
+#emailid{
+    width:150px;
+    height: 1.8rem;
+}
+.sbtn{
+    width:80px;
+    height: 1.9rem;
+    background-color: rgb(44, 44, 44);
+    color:aliceblue;
+    border:none;
+    margin:0px;
+}
+#insta{
+    width:25px;
+    height:25px;
+}
+#socialmediacontainer{
+    display:flex;
+}
+#socialmediacontainer>div{
+    width:30px;
+}
+#last_row{
+    /* border:1px solid red; */
+    width:90%;
+    margin:auto;
+}
+#last_row1>div{
+    /* border:1px solid rgb(23, 18, 18); */
+    width:200px;
+}
+#last_row1{
+    display:flex;
+    justify-content: space-between;
+}
+#last_row1>div:nth-child(3){
+    /* border:1px solid rgb(23, 18, 18); */
+    width:400px;
+}
+#last_row1>div:nth-child(3)>img{
+    margin-top: 20px;
+    width:100%;
+}
+#last_row2{
+    /* border: 1px solid red; */
+    margin-top: 60px;
+    display:flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+#last_row2 a{
+    text-decoration: none;
+}
+.sub-menu-1{
+    display:none;
+    width: 100%;
+}
+#menu-container ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    margin-top:15px;
+    margin-left: -15px;
+    color: white;
+    background-color: rgb(250, 250, 250);
+}
+#menu-container ul li:hover .sub-menu-1 ul{
+    display:block;
+    margin:20px;
+}
+#menu-container>div>a:hover .sub-menu-1 ul li{
+    width:400px;
+    color:black;
+}
+#cart-container{
+    justify-content: space-between;
+}
+#cart-container>div:nth-child(3)
+{
+    margin-top: 10px;
+}
+#cart-container>div:nth-child(2){
+    margin-top: 8px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#row_1>img{
+    margin-top: -2px;
+    width:100%;
+    height: 50px;
+}
     </style>
 </head>
 <body>
@@ -90,57 +376,21 @@
             </ul>
         </div>
     </header>
-    <a href="index.html" id="A">HOME</a>
-    <div id="row_21">
-        <img src="https://www.bathandbodyworks.in/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dw1df43410/images/signin.png" >
-    </div>
-    <div id="row_3">
-        <h2>Sign In or Sign Up</h2>
-        <hr size="1" width="100%" color="black"> 
-    </div>
-    <div id="row_4">
-        <div id="sign_in">
-            <h4 id="H4">SIGN IN</h4>
-            <div>
-                <div><img src="https://www.bathandbodyworks.in/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dwe88a1ab5/images/facebooksignin.png"><span>Login with Facebook</span></div>
-                <div><img src="https://www.bathandbodyworks.in/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dwaf73d2be/images/googlesignin.png"><span>Login with Google</span></div>
+    <div class="cart12"><img src="C:\Users\User\Desktop\kaput-copper-1632\images\Screenshot 2022-12-16 145242.png"></div>
+    <div class="cart12" id="empty"><p>Your Shopping Cart is Empty</p></div>
+    <div id="main_cart">
+        <div id="left"></div>
+        <div id="right_container">
+            <div id="right">
+                <div id="innerright">
+                    <div><p>TOTAL AMOUNT</p></div>
+                    <div id="tpdiv"><span id="totalprice">0</span></div>
+                </div>
+                <button id="checkout"><a href="payment.html">CONTINUE CHECKOUT</a></button>
             </div>
-            <div id="wrong"></div>
-            <p>If you already have an account with us, sign in below</p>
-            <form>
-                <div id="mail_container">
-                <label>Email</label>
-                <div>
-                    <input type="email" placeholder="Enter your email" id="email">
-                </div>
-                <label>Password</label>
-                <div>
-                    <input type="password" placeholder="Enter your password" id="password">
-                </div>
-                </div>
-                <div id="forgotdiv">
-                    <div><h3>Forgot Password?</h3></div>
-                    <div><input type="checkbox" id="rem"><span>Remember Me</span></div>
-                </div>
-                <a href="h" id="privacy" id="A">Privacy Policy</a>
-                <div id="sign_in_btn_div">
-                    <button id="sign_in_btn">SIGN IN</button>
-                </div>
-            </form>
-        </div>
-        <div id="sign_up">
-            <h4 id="H4">SIGN UP</h4>
-            <p>Create an account to access the best of your favorite store</p>
-            <div>
-                <div><img src="https://www.bathandbodyworks.in/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dwe88a1ab5/images/facebooksignin.png"><span>Login with Facebook</span></div>
-                <div><img src="https://www.bathandbodyworks.in/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dwaf73d2be/images/googlesignin.png"><span>Login with Google</span></div>
-            </div>
-            <div>
-            <img src="https://www.bathandbodyworks.in/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dw75052a29/images/benifits-mbl.png" id="sign_up_img">
-            </div>
-            <div><a href="signup.html" id="A"><button id="create">CREATE ACCOUNT</button></a></div>
         </div>
     </div>
+
 
     <div id="row_footer1">
         <div class="footer">
@@ -221,5 +471,5 @@
         </div>
     </div>
 </body>
-<script src="login.js"></script>
 </html>
+<script src="cart.js"></script>
